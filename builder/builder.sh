@@ -7,7 +7,7 @@ git clone https://github.com/mholt/caddy -b "v$VERSION" /go/src/github.com/mholt
     && cd /go/src/github.com/mholt/caddy \
     && git checkout -b "v$VERSION"
 
-# plugin helper
+# plugin helper.
 GOOS=linux GOARCH=amd64 go get -v github.com/abiosoft/caddyplug/caddyplug
 alias caddyplug='GOOS=linux GOARCH=amd64 caddyplug'
 
