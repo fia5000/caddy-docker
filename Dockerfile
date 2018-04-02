@@ -5,7 +5,7 @@ FROM abiosoft/caddy:builder as builder
 
 ARG version="0.10.12"
 # Custom Plugins
-ARG plugins="git,hook.service,http.authz,http.datadog,http.expires,http.filemanager,http.filter,http.git,http.hugo,http.ipfilter,http.login,http.minify,http.prometheus,http.reauth,http.restic,http.upload,net,tls.dns.cloudflare"
+ARG plugins="ARG plugins="hook.service,http.awses,http.expires,http.filemanager,http.filter,http.forwardproxy,http.geoip,http.git,http.gopkg,http.hugo,http.jekyll,http.locale,http.login,http.mailout,http.minify,http.prometheus,http.ratelimit,http.realip,http.upload,net,tls.dns.cloudflare"
 
 # process wrapper
 RUN go get -v github.com/abiosoft/parent
